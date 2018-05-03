@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <style>
             html, body {
                 background-color: #fff;
@@ -79,12 +80,14 @@
 
             <div class="container">
               <div class="row">
-                <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-11 col-md-offset-1">
                   <div class="panel">
                     @component('components.who')
                     @endcomponent
                   </div>
                 </div>
+
+                <div style="clear:both;"></div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
