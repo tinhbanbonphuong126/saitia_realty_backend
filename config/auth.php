@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Admin\Admin;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 return [
@@ -80,11 +82,11 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            'model' => User::class,
         ],
         'admins' => [
             'driver' => 'eloquent',
-            'model' => App\Admin::class,
+            'model' => Admin::class,
         ],
 
         // 'users' => [
